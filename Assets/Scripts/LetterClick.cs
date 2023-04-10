@@ -25,12 +25,12 @@ public class LetterClick : MonoBehaviour
 	
 	private void OnMouseOver()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0)) // On left click cycle sprites forward
 		{
 			current++;
 			sr.sprite = letter[current%letter.Count];
 		}
-		if (Input.GetMouseButtonDown(1))
+		if (Input.GetMouseButtonDown(1)) // On left click cycle sprites backward
 		{
 			if (current<=0){current=letter.Count;}
 			current--;
